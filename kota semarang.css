@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* NAVBAR */
+header {
+    background: #102c46;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    font-size: 28px;
+}
+
+nav h2 span {
+    color: orange;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+/* HERO */
+.hero {
+    height: 550px;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR94YaGJ4VgsdjysGBtY-JY8xMRbSUFvivQq6tzPs2EJg&s=10");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 8%;
+}
+
+.hero-content {
+    color: white;
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.btn {
+    background: orange;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECTION */
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.about, .budaya, .contact {
+    padding: 70px 10%;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.about p, .budaya p {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* WISATA */
+.wisata, .kuliner {
+    padding: 70px 8%;
+    background: #f4f6f8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 18px;
+    color: #102c46;
+}
+
+.card p {
+    margin: 0 18px;
+    line-height: 1.6;
+}
+
+/* CONTACT */
+.contact {
+    background: #eaf0f5;
+}
+
+/* FOOTER */
+footer {
+    background: #102c46;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
